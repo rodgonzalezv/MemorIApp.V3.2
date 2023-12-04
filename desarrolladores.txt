@@ -1,0 +1,25 @@
+Equipo MemorIApp
+    Rodrigo González - rodrigo@system.cl - rod.gonzalezv@duocuc.cl
+    Bladimir Piña - blpina@duocuc.cl
+
+Instalaciones necesarias
+    npm install
+    npm install @capacitor/geolocation
+    npm install @capacitor/google-maps
+    npm install @capacitor/camera
+    npm install @ionic/pwa-elements
+    npx cap sync
+    
+Permisos en Android Manifest
+    API:
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAbBUI4NYtxMFDCOlq2Bky6cvrnIiiPqic"/> 
+
+    PERMISOS:
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29"/>
+    
