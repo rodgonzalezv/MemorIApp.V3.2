@@ -38,6 +38,12 @@ const routes: Routes = [
     path: 'lista-productos',
     loadChildren: () => import('./lista-productos/lista-productos.module').then( m => m.ListaProductosPageModule)
   },
+  {
+    path: 'edit-productos',
+    loadChildren: () => import('./edit-productos/edit-productos.module').then( m => m.EditProductosPageModule)
+  },
+
+
   
 
 

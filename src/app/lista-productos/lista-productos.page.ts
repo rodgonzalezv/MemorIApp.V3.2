@@ -51,6 +51,30 @@ export class ListaProductosPage implements OnInit {
       })
   }
 
+  async edit(id: string) {
+    const alert = await this.alertController.create({
+      header: 'Editar producto',
+      message: '¿Está seguro que quiere modificar este producto?',
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: () => {
+            console.log('Edit action cancelled');
+          }
+        }, {
+          text: 'Modificar',
+          handler: () => {
+            // Navigate to the edit product page with the product ID
+            this.router.navigate(['/edit-productos', { id: id }]);
+          }
+        }
+      ]
+    });
+  
+    await alert.present();
+  }
 
   async delete(id: string) {
     // Confirma Primero

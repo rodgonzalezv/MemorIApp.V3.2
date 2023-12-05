@@ -30,6 +30,7 @@
       <ion-label>{{p.precio}}</ion-label>
       <ion-label>{{p.cantidad}}</ion-label>
        
+        <ion-button type="button" (click)="edit(p.id)"><ion-icon name="pencil-outline"></ion-icon></ion-button>
         <ion-button type="button" (click)="delete(p.id)"><ion-icon name="trash-outline"></ion-icon></ion-button>
 
     </ion-item>

@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="background-image"></div>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-img src="../../assets/logo.png" style="display: block; margin: 0 auto; width: 200px; padding: 20px;"></ion-img>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="fill">Nombre</ion-label>
+    <ion-input [(ngModel)]="producto.nombre" name="nombreProducto" type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fill">Descripcion</ion-label>
+    <ion-input [(ngModel)]="producto.descripcion" name="descripcionProducto" type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fill">Precio</ion-label>
+    <ion-input [(ngModel)]="producto.precio" name="precioProducto" type="number" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fill">Cantidad</ion-label>
+    <ion-input [(ngModel)]="producto.cantidad" name="cantidadProducto" type="number" required></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="updateProducto()">Actualizar Producto</ion-button>
+  <ion-item routerLink="/lista-productos">
+    <ion-button expand="block" fill="outline" style="width: 100%;">
+      Volver a la lista de productos
+    </ion-button>
+  </ion-item>
+</ion-content>
