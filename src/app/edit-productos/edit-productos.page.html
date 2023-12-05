@@ -32,10 +32,11 @@
     <ion-input [(ngModel)]="producto.cantidad" name="cantidadProducto" type="number" required></ion-input>
   </ion-item>
 
-  <ion-button expand="full" (click)="updateProducto()">Actualizar Producto</ion-button>
+  <ion-button expand="full"  fill="solid" size="large" style="width: 100%; font-size: medium;" (click)="updateProducto()">Actualizar Producto</ion-button>
   <ion-item routerLink="/lista-productos">
-    <ion-button expand="block" fill="outline" style="width: 100%;">
-      Volver a la lista de productos
+    <ion-button  expand="full" fill="solid" size="large" style="width: 100%; font-size: medium;" color="success">
+      <ion-icon name="home-outline"></ion-icon>     
+      &nbsp;&nbsp;Volver a la lista de productos
     </ion-button>
   </ion-item>
 </ion-content>
